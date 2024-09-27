@@ -1,0 +1,231 @@
+{
+    "_id_": 1,
+    "_type": "App",
+    "features": {
+        "_id_": 2,
+        "_type": "App.Features",
+        "list_": [
+            {
+                "_id_": 3,
+                "_type": "Activity",
+                "features": {
+                    "_id_": 4,
+                    "_type": "Activity.Features",
+                    "list_": []
+                },
+                "theme": {
+                    "_id_": 5,
+                    "_type": "Theme.Material.DayNight",
+                    "colorPrimary": {
+                        "_id_": 6,
+                        "_type": "Color",
+                        "color_": -12929756
+                    },
+                    "colorPrimaryDark": {
+                        "_id_": 7,
+                        "_type": "Color",
+                        "color_": -13472707
+                    }
+                },
+                "contentView": {
+                    "_id_": 8,
+                    "_type": "RelativeLayout",
+                    "id": {
+                        "_id_": 9,
+                        "_type": "String",
+                        "value_": ""
+                    },
+                    "views": {
+                        "_id_": 10,
+                        "_type": "ViewList",
+                        "list_": [
+                            {
+                                "_id_": 11,
+                                "_type": "Button",
+                                "onClick": {
+                                    "_id_": 12,
+                                    "_type": "Sequence",
+                                    "list_": [
+                                        {
+                                            "_id_": 13,
+                                            "_type": "Material.Snackbar.Show",
+                                            "snackbar": {
+                                                "_id_": 14,
+                                                "_type": "Material.Snackbar",
+                                                "duration": {
+                                                    "_id_": 15,
+                                                    "_type": "Material.Snackbar.Duration",
+                                                    "value_": "long"
+                                                },
+                                                "action": {
+                                                    "_id_": 16,
+                                                    "_type": "Material.Snackbar.Action",
+                                                    "onClick": {
+                                                        "_id_": 17,
+                                                        "_type": "Sequence",
+                                                        "list_": [
+                                                            {
+                                                                "_id_": 18,
+                                                                "_type": "Activity.Start",
+                                                                "onError": {
+                                                                    "_id_": 19,
+                                                                    "_type": "Sequence",
+                                                                    "list_": [
+                                                                        {
+                                                                            "_id_": 20,
+                                                                            "_type": "ScopeVariable",
+                                                                            "name": {
+                                                                                "_id_": 21,
+                                                                                "_type": "String",
+                                                                                "value_": "error"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "showChooser": {
+                                                                    "_id_": 22,
+                                                                    "_type": "Boolean",
+                                                                    "value_": true
+                                                                },
+                                                                "intent": {
+                                                                    "_id_": 23,
+                                                                    "_type": "Intent",
+                                                                    "data": {
+                                                                        "_id_": 24,
+                                                                        "_type": "String",
+                                                                        "value_": "https:\/\/developer.android.com\/reference\/com\/google\/android\/material\/snackbar\/Snackbar"
+                                                                    },
+                                                                    "action": {
+                                                                        "_id_": 25,
+                                                                        "_type": "String",
+                                                                        "value_": "ACTION_VIEW"
+                                                                    }
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "label": {
+                                                        "_id_": 26,
+                                                        "_type": "String",
+                                                        "value_": "More"
+                                                    }
+                                                },
+                                                "text": {
+                                                    "_id_": 27,
+                                                    "_type": "String",
+                                                    "value_": "This is a Snackbar. It will disappear by itself."
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "id": {
+                                    "_id_": 28,
+                                    "_type": "String",
+                                    "value_": ""
+                                },
+                                "android:text": {
+                                    "_id_": 29,
+                                    "_type": "String",
+                                    "value_": "Show"
+                                },
+                                "android:layout_centerInParent": {
+                                    "_id_": 30,
+                                    "_type": "Boolean",
+                                    "value_": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                "name": {
+                    "_id_": 31,
+                    "_type": "String",
+                    "value_": "Main"
+                },
+                "launcher": {
+                    "_id_": 32,
+                    "_type": "Activity.Launcher"
+                }
+            }
+        ]
+    },
+    "settings": {
+        "_id_": 33,
+        "_type": "App.Settings",
+        "debugBuild": {
+            "_id_": 34,
+            "_type": "App.Settings.DebugBuild"
+        },
+        "releaseBuild": {
+            "_id_": 35,
+            "_type": "App.Settings.ReleaseBuild"
+        }
+    },
+    "packaging": {
+        "_id_": 36,
+        "_type": "App.Packaging",
+        "icon": {
+            "_id_": 37,
+            "_type": "AdaptiveIcon",
+            "background": {
+                "_id_": 38,
+                "_type": "Color",
+                "color_": -1
+            },
+            "foreground": {
+                "_type": "DrawableReference",
+                "ref": {
+                    "_type": "String",
+                    "value_": "@drawable\/app_icon",
+                    "_id_": 40
+                },
+                "_id_": 39
+            },
+            "legacyIcon": {
+                "_type": "MipmapReference",
+                "ref": {
+                    "_type": "String",
+                    "value_": "@mipmap\/app_icon",
+                    "_id_": 42
+                },
+                "_id_": 41
+            }
+        },
+        "targetSdk": {
+            "_id_": 43,
+            "_type": "Integer",
+            "value_": 34
+        },
+        "label": {
+            "_id_": 44,
+            "_type": "String",
+            "value_": "Snackbar"
+        },
+        "versionName": {
+            "_id_": 45,
+            "_type": "String",
+            "value_": "1.0"
+        },
+        "versionCode": {
+            "_id_": 46,
+            "_type": "Integer",
+            "value_": 1
+        },
+        "minSdk": {
+            "_id_": 47,
+            "_type": "Integer",
+            "value_": 24
+        },
+        "permissions": {
+            "_id_": 48,
+            "_type": "App.Permissions"
+        },
+        "packageName": {
+            "_id_": 49,
+            "_type": "String",
+            "value_": "com.aaappps.snackbar"
+        }
+    },
+    "_abVer": 229
+}
